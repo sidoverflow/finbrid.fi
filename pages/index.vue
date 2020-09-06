@@ -44,25 +44,22 @@ export default {
 		cards: [
 			{
 				title: 'Technology',
-				src: '@/components/yacht.jpg',
+				src: require('@/components/yacht.jpg'),
 				flex: 3,
 			},
 			{
 				title: 'Business',
-				src:
-					'https://cdn.vuetifyjs.com/images/cards/house.jpg',
+				src: require('@/components/business.jpg'),
 				flex: 3,
 			},
 			{
 				title: 'Solutions',
-				src:
-					'https://cdn.vuetifyjs.com/images/cards/road.jpg',
+				src: require('@/components/solutions.jpg'),
 				flex: 3,
 			},
 			{
 				title: 'Project Financing & Investment',
-				src:
-					'https://cdn.vuetifyjs.com/images/cards/plane.jpg',
+				src: require('@/components/investment.jpg'),
 				flex: 3,
 			},
 		],
@@ -72,7 +69,7 @@ export default {
 	},
 	computed: {
 		boatImage() {
-			return require(`../components/boat_vector.png`);
+			return require('@/components/boat_vector.png');
 		},
 	},
 };
