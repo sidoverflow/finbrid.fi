@@ -1,97 +1,91 @@
 <template>
-  <v-layout
-    column
-    justify-center
-    align-center
-  >
-    <v-flex
-      xs12
-      sm8
-      md6
-    >
-      <div class="text-center">
-        <logo />
-        <vuetify-logo />
-      </div>
-      <v-card>
-        <v-card-title class="headline">
-          Welcome to the Vuetify + Nuxt.js template
-        </v-card-title>
-        <v-card-text>
-          <p>Vuetify is a progressive Material Design component framework for Vue.js. It was designed to empower developers to create amazing applications.</p>
-          <p>
-            For more information on Vuetify, check out the <a
-              href="https://vuetifyjs.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              documentation
-            </a>.
-          </p>
-          <p>
-            If you have questions, please join the official <a
-              href="https://chat.vuetifyjs.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="chat"
-            >
-              discord
-            </a>.
-          </p>
-          <p>
-            Find a bug? Report it on the github <a
-              href="https://github.com/vuetifyjs/vuetify/issues"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="contribute"
-            >
-              issue board
-            </a>.
-          </p>
-          <p>Thank you for developing with Vuetify and I look forward to bringing more exciting features in the future.</p>
-          <div class="text-xs-right">
-            <em><small>&mdash; John Leider</small></em>
-          </div>
-          <hr class="my-3">
-          <a
-            href="https://nuxtjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt Documentation
-          </a>
-          <br>
-          <a
-            href="https://github.com/nuxt/nuxt.js"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt GitHub
-          </a>
-        </v-card-text>
-        <v-card-actions>
-          <v-spacer />
-          <v-btn
-            color="primary"
-            nuxt
-            to="/inspire"
-          >
-            Continue
-          </v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-flex>
-  </v-layout>
+	<v-container fluid class="pa-0 my-4">
+		<v-card class="rounded-t-xl mb-4" color="white" width="auto" height="300px" elevation="0">
+			<v-row>
+				<v-col cols="12" md="7">
+					<div class="top-container">
+						<v-card-text
+							class="text-h4 font-weight-bold info--text"
+						>Utilizing industry and technological knowhow</v-card-text>
+						<v-card-text
+							class="text-h5 font-weight-medium info--text"
+						>FINBRID brings together power with propulsion for operational success</v-card-text>
+					</div>
+				</v-col>
+				<v-col cols="8" md="4">
+					<div class="img-container">
+						<v-img contain="true" width="100%" :src="this.boatImage"></v-img>
+					</div>
+				</v-col>
+			</v-row>
+		</v-card>
+		<v-row class="mx-2">
+			<v-col v-for="card in cards" :key="card.title" :cols="card.flex">
+				<v-card class="rounded-xl">
+					<v-img
+						:src="card.src"
+						class="white--text align-end"
+						gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+						height="280px"
+					>
+						<v-card-title class="font-weight-bold" v-text="card.title"></v-card-title>
+					</v-img>
+				</v-card>
+			</v-col>
+		</v-row>
+	</v-container>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-import VuetifyLogo from '~/components/VuetifyLogo.vue'
+import Logo from '~/components/Logo.vue';
 
 export default {
-  components: {
-    Logo,
-    VuetifyLogo
-  }
-}
+	data: () => ({
+		cards: [
+			{
+				title: 'Technology',
+				src: '@/components/yacht.jpg',
+				flex: 3,
+			},
+			{
+				title: 'Business',
+				src:
+					'https://cdn.vuetifyjs.com/images/cards/house.jpg',
+				flex: 3,
+			},
+			{
+				title: 'Solutions',
+				src:
+					'https://cdn.vuetifyjs.com/images/cards/road.jpg',
+				flex: 3,
+			},
+			{
+				title: 'Project Financing & Investment',
+				src:
+					'https://cdn.vuetifyjs.com/images/cards/plane.jpg',
+				flex: 3,
+			},
+		],
+	}),
+	components: {
+		Logo,
+	},
+	computed: {
+		boatImage() {
+			return require(`../components/boat_vector.png`);
+		},
+	},
+};
 </script>
+
+<style>
+.top-container {
+	padding-top: 80px;
+	padding-left: 25px;
+}
+.img-container {
+	padding-top: 50px;
+	padding-right: 10px;
+}
+</style>
+
