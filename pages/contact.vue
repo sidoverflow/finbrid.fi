@@ -50,17 +50,16 @@
 							required
 						></v-text-field>
 
-						<v-text-field
-							v-model="email"
+						<v-textarea
 							dark
-							:rules="emailRules"
 							color="white"
 							label="Message"
 							height="200px"
 							outlined
+							no-resize
 							rounded
 							required
-						></v-text-field>
+						></v-textarea>
 
 						<v-btn
 							rounded
