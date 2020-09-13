@@ -75,8 +75,8 @@ export default {
 			dark: false,
 			themes: {
 				light: {
-					primary: '#001CD4',
-					accent: '#3700B3',
+					primary: '#333c5a',
+					accent: '#1D2951',
 					secondary: '#ededed',
 					info: '#414141',
 					warning: colors.amber.base,

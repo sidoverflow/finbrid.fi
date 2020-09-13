@@ -1,22 +1,21 @@
 <template>
-	<div class="mx-10">
-		<img class="FinbridLogo" alt="Finbrid Logo" src="./fin_ps.png" />
-		<img class="FinbridText my-6" alt="Finbrid Logo" src="./fintext_ps.png" />
-	</div>
+	<a href="/">
+		<img class="FinbridLogo mb-2" alt="Finbrid Logo" src="./finbrid_logo.png" />
+	</a>
 </template>
 
 <style>
-.FinbridLogo {
-	height: 120px;
-	transform: rotateY(560deg);
-	animation: turn 3.5s ease-out forwards 1s;
+@media only screen and (max-width: 2000px) {
+	.FinbridLogo {
+		height: 120px;
+		margin-left: 130px;
+	}
 }
-.FinbridText {
-	height: 60px;
-}
-@keyframes turn {
-	100% {
-		transform: rotateY(0deg);
+
+@media only screen and (max-width: 1200px) {
+	.FinbridLogo {
+		height: 120px;
+		margin-left: 40px;
 	}
 }
 </style>

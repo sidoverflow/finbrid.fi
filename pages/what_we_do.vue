@@ -1,20 +1,16 @@
 <template>
 	<v-container fluid class="pa-0">
-		<!-- <v-card class="rounded-t-xl mb-4" color="tran" width="auto" height="300px" elevation="0"> -->
 		<div class="top-container">
-			<v-card-text
-				class="text-h4 font-weight-bold white--text mb-4 text-center"
-			>Utilizing industry and technological knowhow.</v-card-text>
+			<div class="text-h6 text-center font-weight-bold white--text">WHAT WE DO</div>
 			<v-divider class="divider"></v-divider>
-			<div align="center">
-				<v-img class="mb-n5 mt-6" contain="true" width="18%" :src="this.finbridLogo"></v-img>
+			<div class="text-body-1 font-weight-normal white--text">
+				Through our partnerships around the world, Finbrid is able to harness greater project value than its competitors.
+				<br />
+				<br />Using Finbrid as your consultancy not only reduces our client’s costs but also eliminates all the hassle and complications of working with various vendors to create your perfect solution, with our in-depth knowledge of leading supplier’s
+				technology into the battery, propulsion and charging technology. Once we know your operational needs, we will harmonise the most suitable, safe and cost-effective solution tailored to your needs.
+				We provide consultancy documentation and reports to enable you to fast track your decision as well.
 			</div>
-
-			<v-card-text
-				class="text-h5 font-weight-medium white--text font-italic text-center"
-			>brings together power with propulsion for operational success</v-card-text>
 		</div>
-		<!-- </v-card> -->
 		<v-row class="px-14 mt-4">
 			<v-col v-for="card in cards" :key="card.title" :cols="card.flex">
 				<v-card class="rounded-lg">
@@ -33,18 +29,16 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue';
-
 export default {
 	data: () => ({
 		cards: [
 			{
-				title: 'Technology',
+				title: 'Technology Evaluation',
 				src: require('@/components/yacht.jpg'),
 				flex: 3,
 			},
 			{
-				title: 'Business',
+				title: 'Business Evaluation',
 				src: require('@/components/business.jpg'),
 				flex: 3,
 			},
@@ -60,34 +54,21 @@ export default {
 			},
 		],
 	}),
-	components: {
-		Logo,
-	},
-	computed: {
-		boatImage() {
-			return require('@/components/boat_vector.png');
-		},
-		finbridLogo() {
-			return require('@/components/fintext_ps.png');
-		},
-	},
 };
 </script>
 
 <style>
 .top-container {
-	padding-top: 50px;
-	padding-left: 30px;
-	padding-right: 30px;
-}
-.img-container {
-	padding-top: 50px;
-	padding-right: 10px;
+	padding-top: 20px;
+	padding-left: 280px;
+	padding-right: 280px;
 }
 .divider {
 	background-color: white;
-	margin-left: 220px;
-	margin-right: 220px;
+	margin-left: 350px;
+	margin-right: 350px;
+	margin-top: 10px;
+	margin-bottom: 30px;
 }
 </style>
 
