@@ -9,7 +9,8 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "nuxt": "^2.14.0"
+    "nuxt": "^2.14.0",
+    "nuxt-gmaps": "^1.2.8"
   },
   "devDependencies": {
     "@nuxtjs/vuetify": "^1.11.2"
