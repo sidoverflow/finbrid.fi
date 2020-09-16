@@ -19,9 +19,11 @@
 			<!-- <v-spacer /> -->
 			<div class="my-11 nav-container">
 				<v-btn
+					active-class
 					text
 					rounded
-					class="mr-6 pa-4 primary--text font-weight-bold white--text"
+					color="white"
+					class="mr-6 pa-4 font-weight-bold white--text"
 					href="/finbrid-website"
 				>
 					<v-icon x-small class="mr-2">fa fa-home</v-icon
@@ -30,7 +32,8 @@
 				<v-btn
 					text
 					rounded
-					class="mx-6 pa-4 primary--text font-weight-bold white--text"
+					color="white"
+					class="mx-6 pa-4 font-weight-bold white--text"
 					href="/finbrid-website/about"
 				>
 					<v-icon x-small class="mr-2">fa fa-users</v-icon
@@ -39,8 +42,9 @@
 				<v-btn
 					text
 					rounded
+					color="white"
 					dark
-					class="mx-6 pa-4 primary--text font-weight-bold white--text"
+					class="mx-6 pa-4 font-weight-bold white--text"
 					href="/finbrid-website/what_we_do"
 				>
 					<v-icon x-small class="mr-2"
@@ -50,8 +54,9 @@
 				<v-btn
 					text
 					rounded
+					color="white"
 					dark
-					class="mx-6 pa-4 primary--text font-weight-bold white--text"
+					class="mx-6 pa-4 font-weight-bold white--text"
 					href="/finbrid-website"
 				>
 					<v-icon x-small class="mr-2"
@@ -61,8 +66,9 @@
 				<v-btn
 					text
 					rounded
+					color="white"
 					dark
-					class="ml-6 pa-4 primary--text font-weight-bold white--text"
+					class="ml-6 pa-4 font-weight-bold white--text"
 					href="/finbrid-website/contact"
 				>
 					<v-icon x-small class="mr-2"
