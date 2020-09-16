@@ -1,38 +1,69 @@
 <template>
 	<v-container fluid class="pa-0">
 		<div class="top-container">
-			<div class="text-h5 text-center font-weight-bold white--text">WHAT WE DO</div>
+			<div
+				class="text-h5 text-center font-weight-bold white--text"
+			>
+				WHAT WE DO
+			</div>
 			<v-divider class="divider"></v-divider>
 			<div class="text-h6 font-weight-normal white--text">
-				<span
-					class="font-italic"
-				>Through our partnerships around the world, FINBRID is able to harness greater project value than its competitors.</span>
+				<span class="font-italic"
+					>Through our partnerships around the world,
+					FINBRID is able to harness greater project value
+					than its competitors.</span
+				>
 
 				<br />
-				<br />Using FINBRID as your consultancy not only reduces our client’s costs but also eliminates all the hassle and complications of working with various vendors to create your perfect solution, with our in-depth knowledge of leading supplier’s
-				technology into the battery, propulsion and charging technology. Once we know your operational needs, we will harmonise the most suitable, safe and cost-effective solution tailored to your needs.
-				We provide consultancy documentation and reports to enable you to fast track your decision as well.
+				<br />Using FINBRID as your consultancy not only
+				reduces our client’s costs but also eliminates all the
+				hassle and complications of working with various
+				vendors to create your perfect solution, with our
+				in-depth knowledge of leading supplier’s technology
+				into the battery, propulsion and charging technology.
+				Once we know your operational needs, we will harmonise
+				the most suitable, safe and cost-effective solution
+				tailored to your needs. We provide consultancy
+				documentation and reports to enable you to fast track
+				your decision as well.
 			</div>
 		</div>
 		<v-row class="px-12 mt-4">
-			<v-col v-for="card in cards" :key="card.title" :cols="card.flex">
-				<v-card class="rounded-lg" @click.stop="card.dialog = true">
+			<v-col
+				v-for="card in cards"
+				:key="card.title"
+				:cols="card.flex"
+			>
+				<v-card
+					class="rounded-lg"
+					@click.stop="card.dialog = true"
+				>
 					<v-img
 						:src="card.src"
 						class="card-img white--text align-end"
 						gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
 						height="26em"
 					>
-						<v-card-title class="font-weight-bold" v-text="card.title"></v-card-title>
+						<v-card-title
+							class="font-weight-bold"
+							v-text="card.title"
+						></v-card-title>
 					</v-img>
 				</v-card>
 			</v-col>
 		</v-row>
 
-		<div v-for="card in cards" :key="card.title" style="white-space: pre-line;">
+		<div
+			v-for="card in cards"
+			:key="card.title"
+			style="white-space: pre-line;"
+		>
 			<v-dialog dark v-model="card.dialog" width="50em">
 				<v-card color="#141d36" class="rounded-xl">
-					<v-card-title class="text-uppercase text-h5 font-weight-black" v-text="card.title"></v-card-title>
+					<v-card-title
+						class="text-uppercase text-h5 font-weight-black"
+						v-text="card.title"
+					></v-card-title>
 
 					<v-card-text
 						class="text-body-1 text-uppercase font-weight-bold red--text"
@@ -48,9 +79,18 @@
 						v-html="description"
 					></v-card-text>
 
-					<v-expansion-panels inset dark v-for="title in card.titles" :key="title" hover>
+					<v-expansion-panels
+						inset
+						dark
+						v-for="title in card.titles"
+						:key="title"
+						hover
+					>
 						<v-expansion-panel>
-							<v-expansion-panel-header class="text-h5 font-weight-bold" v-text="title"></v-expansion-panel-header>
+							<v-expansion-panel-header
+								class="text-h5 font-weight-bold"
+								v-text="title"
+							></v-expansion-panel-header>
 							<v-expansion-panel-content
 								class="text-body-1 font-italic pa-5"
 								v-html="card.expansions[title]"
@@ -76,8 +116,9 @@
 							color="white"
 							class="rm-btn ma-2"
 							small
-							@click="isReadMore=!isReadMore"
-						>Read More</v-btn>
+							@click="isReadMore = !isReadMore"
+							>Read More</v-btn
+						>
 						<v-btn
 							v-if="isReadMore"
 							rounded
@@ -85,8 +126,9 @@
 							color="white"
 							class="rm-btn ma-2"
 							small
-							@click="isReadMore=!isReadMore"
-						>Read Less</v-btn>
+							@click="isReadMore = !isReadMore"
+							>Read Less</v-btn
+						>
 					</v-card-actions>
 				</v-card>
 			</v-dialog>
@@ -190,7 +232,6 @@ export default {
 	margin-bottom: 2em;
 }
 .card-img:hover {
-	opacity: 80%;
+	opacity: 0.8;
 }
 </style>
-
