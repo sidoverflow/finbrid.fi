@@ -1,21 +1,25 @@
 <template>
 	<a href="/">
-		<img class="FinbridLogo mb-2" alt="Finbrid Logo" src="./finbrid_logo.png" />
+		<img class="FinbridLogo" alt="Finbrid Logo" src="./finbrid_logo.png" />
 	</a>
 </template>
 
 <style>
 @media only screen and (max-width: 2000px) {
 	.FinbridLogo {
-		height: 120px;
-		margin-left: 130px;
+		width: 6.5em;
+		margin-left: 10em;
+		object-fit: scale-down;
+		max-height: 4em;
 	}
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1450px) {
 	.FinbridLogo {
-		height: 120px;
-		margin-left: 40px;
+		width: 6.5em;
+		margin-left: 3em;
+		object-fit: scale-down;
+		max-height: 4em;
 	}
 }
 </style>

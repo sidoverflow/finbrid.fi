@@ -1,34 +1,53 @@
 <template>
 	<v-app>
-		<v-app-bar min-width="1100px" class="rounded-b-xl" color="#1D2951" prominent app>
-			<FinbridLogo />
+		<v-app-bar min-width="1300px" class="rounded-b-xl" color="#1D2951" prominent app>
+			<!-- <FinbridLogo /> -->
+			<v-img :src="this.headerLogo" max-height="5em" max-width="8em" class="FinbridLogo" contain></v-img>
 			<!-- <v-toolbar-title color="white" v-text="title" /> -->
 			<!-- <v-spacer /> -->
-			<div class="my-10 nav-container">
-				<v-btn text color="white" class="mr-6 pa-4 primary--text font-weight-bold" href="/" small>
+			<div class="my-11 nav-container">
+				<v-btn
+					text
+					color="white"
+					rounded
+					class="mr-6 pa-4 primary--text font-weight-bold"
+					href="/finbrid-website"
+				>
 					<v-icon x-small class="mr-2">fa fa-home</v-icon>Home
 				</v-btn>
-				<v-btn text color="white" class="mx-6 pa-4 primary--text font-weight-bold" href="/about" small>
+				<v-btn
+					text
+					color="white"
+					rounded
+					class="mx-6 pa-4 primary--text font-weight-bold"
+					href="/finbrid-website/about"
+				>
 					<v-icon x-small class="mr-2">fa fa-users</v-icon>About Us
 				</v-btn>
 				<v-btn
 					text
 					color="white"
+					rounded
 					class="mx-6 pa-4 primary--text font-weight-bold"
-					href="/what_we_do"
-					small
+					href="/finbrid-website/what_we_do"
 				>
 					<v-icon x-small class="mr-2">fa fa-globe-europe</v-icon>What We Do
 				</v-btn>
-				<v-btn text color="white" class="mx-6 pa-4 primary--text font-weight-bold" href="/" small>
+				<v-btn
+					text
+					color="white"
+					rounded
+					class="mx-6 pa-4 primary--text font-weight-bold"
+					href="/finbrid-website"
+				>
 					<v-icon x-small class="mr-2">fa fa-hands-helping</v-icon>Our Partners
 				</v-btn>
 				<v-btn
 					text
 					color="white"
+					rounded
 					class="ml-6 pa-4 primary--text font-weight-bold"
-					href="/contact"
-					small
+					href="/finbrid-website/contact"
 				>
 					<v-icon x-small class="mr-2">fa fa-envelope</v-icon>Contact Us
 				</v-btn>
@@ -40,7 +59,7 @@
 		<!-- <v-footer app>
 			<span>&copy; {{ new Date().getFullYear() }} Finbrid Oy</span>
 		</v-footer>-->
-		<v-footer min-width="600px" color="#333c5a" padless height="40px" app>
+		<v-footer min-width="600px" color="#333c5a" padless height="40em" app>
 			<!-- <div class="ml-4 float-left text-overline white--text font-weight-thin">
 				<v-chip outlined pill small color="white">
 					<v-icon x-small left>fa fa-home</v-icon>Default
@@ -99,6 +118,11 @@ export default {
 	components: {
 		FinbridLogo,
 	},
+	computed: {
+		headerLogo() {
+			return require('@/components/finbrid_logo.png');
+		},
+	},
 };
 </script>
 
@@ -109,13 +133,26 @@ html {
 
 @media only screen and (max-width: 2000px) {
 	.nav-container {
-		margin-left: 250px;
+		margin-left: 18em;
 	}
 }
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1750px) {
 	.nav-container {
-		margin-left: 20px;
+		margin-left: 5em;
+	}
+}
+@media only screen and (max-width: 2000px) {
+	.FinbridLogo {
+		margin-left: 10em;
+		object-fit: scale-down;
+	}
+}
+
+@media only screen and (max-width: 1450px) {
+	.FinbridLogo {
+		margin-left: 3em;
+		object-fit: scale-down;
 	}
 }
 </style>

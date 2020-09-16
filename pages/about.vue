@@ -1,48 +1,38 @@
 <template>
 	<v-container fluid class="pa-0">
 		<div class="top-container">
-			<div class="text-h6 text-center font-weight-bold white--text">ABOUT US</div>
+			<div class="text-h5 text-center font-weight-bold white--text">ABOUT US</div>
 			<v-divider class="divider"></v-divider>
-			<div class="text-body-1 font-weight-normal white--text">
-				Finbrid Oy operates in the growing area of the
-				hybridization in marine and off-highway. The co-owners of
-				Finbrid are experienced marine entrepreneurs with a long
-				background in the marine industry. ​
+			<div class="text-h6 font-weight-regular white--text">
+				<span class="font-italic font-weight-medium">
+					FINBRID is a partnership of visionary consultants with an impeccable reputation in the global marine
+					and electrification sector.
+				</span>
+				​
 				<br />
-				<br />The marine world is shifting to electric. If vessels
-				are being built or upgraded new technologies are being
-				chosen. On the one hand this is a very exciting
-				dynamic and transition. But for the operator facing
-				and evaluating technologies can be a daunting task.
+				<br />A combined knowledge of over two decades, we know the industry back to front. We're impartial -
+				so you will get exactly what you need.
 				<br />​
-				<br />Technology companies will be looking to sell.
-				By engaging with Finbrid we take your operational
-				needs first. With our in depth know how and access to
-				all the forms of energy and propulsion. We can fast
-				track the most suitable technology which is fit for
-				your purpose. Current technologies are evolving,
-				prices are changing, new technologies are emerging. ​
+				<br />No smoke or mirrors. Straightforward transparent advice which helps you navigate the agile tech
+				market. We curate the best possible supply chain. Locate long term battery solutions. Your needs
+				are our number one priority.
 				<br />
-				<br />The LIO battery world in marine is evolving.
-				When looking at your operational needs we can assist you to
-				chose the most suitable form of energy supplier .
-				Battery chemistry type, space, weight, life cycles,
-				cooling all matched for ultimate system harmony with
-				propulsion.
+				<br />Like many, we have embraced the planetary seismic shift this year.
+				<span
+					class="font-italic"
+				>Nature hit the rest button.</span>
 				<br />
-				<br />Through Finbrid we can ensure your supply
-				agreements are there with commitment to support during
-				your operational needs.
+				<br />In response, demand for new vessels and upgraded technologies has soared across the globe.
 				<br />
-				<br />With our finger on the pulse
-				of all market suppliers. We can fast track your
-				business plan. We can assist your project execution by
-				delivering technology evaluation reports. This
-				documentation can assist you and your investors to get
-				to project inception faster. You will not have been
-				led by technology instead by industry experts who help
-				you chose the right technology to suit your and your
-				investor needs.
+				<br />Coastal and inland waterways stakeholders are now in a race to exceed regulations.
+				<br />
+				<br />Finance has become critical factor in everyone's process. So our watertight reports enable clients to
+				fast track large scale infrastructure projects in a seamless manner.
+				<br />
+				<br />We are proud to be immersed in an incredible industry which ushers in cleaner marine
+				environments.
+				<br />
+				<br />And helping partners both large and small to be part of the solution is what makes us tick.
 			</div>
 		</div>
 	</v-container>
@@ -50,15 +40,15 @@
 
 <style>
 .top-container {
-	padding-top: 20px;
-	padding-left: 280px;
-	padding-right: 280px;
+	padding-top: 2.5em;
+	padding-left: 18em;
+	padding-right: 18em;
 }
 .divider {
 	background-color: white;
-	margin-left: 350px;
-	margin-right: 350px;
-	margin-top: 10px;
-	margin-bottom: 30px;
+	margin-left: 30em;
+	margin-right: 30em;
+	margin-top: 0.8em;
+	margin-bottom: 2em;
 }
 </style>

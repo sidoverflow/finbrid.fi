@@ -7,7 +7,7 @@
 			>Utilizing industry and technological knowhow.</v-card-text>
 			<v-divider class="divider"></v-divider>
 			<div align="center">
-				<v-img class="mb-n5 mt-6" contain="true" width="18%" :src="this.finbridLogo"></v-img>
+				<v-img class="mb-n5 mt-6" contain width="18%" :src="this.finbridLogo"></v-img>
 			</div>
 
 			<v-card-text
@@ -15,14 +15,14 @@
 			>brings together power with propulsion for operational success</v-card-text>
 		</div>
 		<!-- </v-card> -->
-		<v-row class="px-14 mt-4">
+		<v-row class="px-12 mt-4">
 			<v-col v-for="card in cards" :key="card.title" :cols="card.flex">
 				<v-card class="rounded-lg">
 					<v-img
 						:src="card.src"
 						class="white--text align-end"
 						gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-						height="280px"
+						height="26em"
 					>
 						<v-card-title class="font-weight-bold" v-text="card.title"></v-card-title>
 					</v-img>
@@ -33,8 +33,6 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue';
-
 export default {
 	data: () => ({
 		cards: [
@@ -42,31 +40,29 @@ export default {
 				title: 'Technology',
 				src: require('@/components/yacht.jpg'),
 				flex: 3,
+				dialog: 'techModal',
 			},
 			{
 				title: 'Business',
 				src: require('@/components/business.jpg'),
 				flex: 3,
+				dialog: 'businessModal',
 			},
 			{
 				title: 'Solutions',
 				src: require('@/components/solutions.jpg'),
 				flex: 3,
+				dialog: 'solutionsModal',
 			},
 			{
 				title: 'Project Financing & Investment',
 				src: require('@/components/investment.jpg'),
 				flex: 3,
+				dialog: 'financingModal',
 			},
 		],
 	}),
-	components: {
-		Logo,
-	},
 	computed: {
-		boatImage() {
-			return require('@/components/boat_vector.png');
-		},
 		finbridLogo() {
 			return require('@/components/fintext_ps.png');
 		},
@@ -76,18 +72,14 @@ export default {
 
 <style>
 .top-container {
-	padding-top: 50px;
-	padding-left: 30px;
-	padding-right: 30px;
-}
-.img-container {
-	padding-top: 50px;
-	padding-right: 10px;
+	padding-top: 2.5em;
+	padding-left: 2em;
+	padding-right: 2em;
 }
 .divider {
 	background-color: white;
-	margin-left: 220px;
-	margin-right: 220px;
+	margin-left: 20em;
+	margin-right: 20em;
 }
 </style>
 
