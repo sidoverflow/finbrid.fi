@@ -2,45 +2,31 @@
 	<v-container fluid class="pa-0">
 		<!-- <v-card class="rounded-t-xl mb-4" color="tran" width="auto" height="300px" elevation="0"> -->
 		<div class="top-container">
-			<v-card-text
-				class="text-h4 font-weight-bold white--text mb-4 text-center"
-				>Utilizing industry and technological
-				knowhow.</v-card-text
-			>
+			<v-card-text class="text-h4 font-weight-bold white--text mb-4 text-center">
+				Utilizing industry and technological
+				knowhow.
+			</v-card-text>
 			<v-divider class="divider"></v-divider>
 			<div align="center">
-				<v-img
-					class="mb-n5 mt-6"
-					contain
-					width="18%"
-					:src="this.finbridLogo"
-				></v-img>
+				<v-img class="mb-n5 mt-6" contain width="18%" :src="this.finbridLogo"></v-img>
 			</div>
 
-			<v-card-text
-				class="text-h5 font-weight-medium white--text font-italic text-center"
-				>brings together power with propulsion for operational
-				success</v-card-text
-			>
+			<v-card-text class="text-h5 font-weight-medium white--text font-italic text-center">
+				brings together power with propulsion for operational
+				success
+			</v-card-text>
 		</div>
 		<!-- </v-card> -->
 		<v-row class="px-12 mt-4">
-			<v-col
-				v-for="card in cards"
-				:key="card.title"
-				:cols="card.flex"
-			>
-				<v-card class="rounded-lg">
+			<v-col v-for="card in cards" :key="card.title" :cols="card.flex">
+				<v-card class="rounded-lg" href="/finbrid-website/what_we_do">
 					<v-img
 						:src="card.src"
 						class="white--text align-end"
 						gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
 						height="26em"
 					>
-						<v-card-title
-							class="font-weight-bold"
-							v-html="card.title"
-						></v-card-title>
+						<v-card-title class="font-weight-bold" v-html="card.title"></v-card-title>
 					</v-img>
 				</v-card>
 			</v-col>
