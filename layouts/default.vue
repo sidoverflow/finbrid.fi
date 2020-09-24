@@ -78,8 +78,8 @@
 				<v-img
 					:src="this.headerLogo"
 					class="mobile-finbrid-logo"
-					max-width="9em"
-					max-height="6.5em"
+					max-width="8em"
+					max-height="5em"
 					contain
 				></v-img>
 			</v-app-bar-nav-icon>
@@ -347,6 +347,7 @@ html {
 .mobile-finbrid-logo {
 	margin-left: 8em;
 	margin-top: 3.5em;
+	margin-bottom: 2em;
 }
 .expanded-mobile-logo {
 	margin-top: 3em;
