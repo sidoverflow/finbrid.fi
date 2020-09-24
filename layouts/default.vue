@@ -125,7 +125,7 @@
 							color="white"
 							icon
 							@click.native="dialog = false"
-							class="mr-2"
+							class="mr-2 mt-14"
 						>
 							<v-icon>fa fa-times-circle</v-icon>
 						</v-btn>
@@ -346,7 +346,7 @@ html {
 }
 .mobile-finbrid-logo {
 	margin-left: 8em;
-	margin-top: 1em;
+	margin-top: 0.5em;
 }
 .expanded-mobile-logo {
 	margin-top: 3em;
