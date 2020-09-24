@@ -1,18 +1,14 @@
 <template>
 	<v-container fluid class="pa-0">
 		<div class="top-container">
-			<div
-				class="text-h5 text-center font-weight-bold white--text"
-			>
-				WHAT WE DO
-			</div>
+			<div class="text-h5 text-center font-weight-bold white--text">WHAT WE DO</div>
 			<v-divider class="divider"></v-divider>
 			<div class="text-h6 font-weight-normal white--text">
-				<span class="font-italic"
-					>Through our partnerships around the world,
+				<span class="font-italic">
+					Through our partnerships around the world,
 					FINBRID is able to harness greater project value
-					than its competitors.</span
-				>
+					than its competitors.
+				</span>
 
 				<br />
 				<br />Using FINBRID as your consultancy not only
@@ -28,42 +24,46 @@
 				your decision as well.
 			</div>
 		</div>
-		<v-row class="px-12 mt-4">
-			<v-col
-				v-for="card in cards"
-				:key="card.title"
-				:cols="card.flex"
-			>
-				<v-card
-					class="rounded-lg"
-					@click.stop="card.dialog = true"
-				>
+		<v-row class="px-12 mt-4 hidden-sm-and-down">
+			<v-col v-for="card in cards" :key="card.title" :cols="card.flex">
+				<v-card class="rounded-lg" @click.stop="card.dialog = true">
 					<v-img
 						:src="card.src"
 						class="card-img white--text align-end"
 						gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
 						height="26em"
 					>
-						<v-card-title
-							class="font-weight-bold"
-							v-text="card.title"
-						></v-card-title>
+						<v-card-title class="font-weight-bold" v-html="card.title"></v-card-title>
 					</v-img>
 				</v-card>
 			</v-col>
 		</v-row>
 
-		<div
-			v-for="card in cards"
-			:key="card.title"
-			style="white-space: pre-line;"
-		>
+		<v-row class="px-4 mt-4 hidden-md-and-up">
+			<v-col v-for="card in cards" :key="card.title" :cols="6">
+				<v-card class="rounded-lg" @click.stop="card.dialog = true">
+					<v-img
+						:src="card.src"
+						class="card-img white--text align-end"
+						gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+						height="13em"
+					>
+						<v-card-title class="font-weight-bold" v-html="card.title"></v-card-title>
+					</v-img>
+				</v-card>
+			</v-col>
+		</v-row>
+
+		<div v-for="card in cards" :key="card.title" style="white-space: pre-line;">
 			<v-dialog dark v-model="card.dialog" width="50em">
 				<v-card color="#141d36" class="rounded-xl">
-					<v-card-title
-						class="text-uppercase text-h5 font-weight-black"
-						v-text="card.title"
-					></v-card-title>
+					<v-toolbar extended class="mb-3 pt-6" color="accent">
+						<v-card-title class="text-uppercase text-h5 font-weight-black" v-html="card.title"></v-card-title>
+						<v-spacer></v-spacer>
+						<v-btn color="white" icon @click.native="card.dialog = false">
+							<v-icon>fa fa-times-circle</v-icon>
+						</v-btn>
+					</v-toolbar>
 
 					<v-card-text
 						class="text-body-1 text-uppercase font-weight-bold red--text"
@@ -79,18 +79,9 @@
 						v-html="description"
 					></v-card-text>
 
-					<v-expansion-panels
-						inset
-						dark
-						v-for="title in card.titles"
-						:key="title"
-						hover
-					>
+					<v-expansion-panels inset dark v-for="title in card.titles" :key="title" hover>
 						<v-expansion-panel>
-							<v-expansion-panel-header
-								class="text-h5 font-weight-bold"
-								v-text="title"
-							></v-expansion-panel-header>
+							<v-expansion-panel-header class="text-h5 font-weight-bold" v-text="title"></v-expansion-panel-header>
 							<v-expansion-panel-content
 								class="text-body-1 font-italic pa-5"
 								v-html="card.expansions[title]"
@@ -117,8 +108,7 @@
 							class="rm-btn ma-2"
 							small
 							@click="isReadMore = !isReadMore"
-							>Read More</v-btn
-						>
+						>Read More</v-btn>
 						<v-btn
 							v-if="isReadMore"
 							rounded
@@ -127,8 +117,7 @@
 							class="rm-btn ma-2"
 							small
 							@click="isReadMore = !isReadMore"
-							>Read Less</v-btn
-						>
+						>Read Less</v-btn>
 					</v-card-actions>
 				</v-card>
 			</v-dialog>
@@ -141,7 +130,8 @@ export default {
 	data: () => ({
 		cards: [
 			{
-				title: 'Technology Evaluation',
+				title:
+					'Technology <br class="responsive" /> Evaluation',
 				src: require('@/components/wwd_technology.jpg'),
 				flex: 3,
 				tags: [
@@ -165,7 +155,8 @@ export default {
 				dialog: false,
 			},
 			{
-				title: 'Business Evaluation',
+				title:
+					'Business <br class="responsive" /> Evaluation',
 				src: require('@/components/wwd_business.jpg'),
 				flex: 3,
 				tags: [
@@ -202,7 +193,8 @@ export default {
 				dialog: false,
 			},
 			{
-				title: 'Project Financing & Investment',
+				title:
+					'Project <br class="responsive" /> Financing <br /> & Investment',
 				src: require('@/components/wwd_finance.jpg'),
 				flex: 3,
 				descriptions: [
@@ -224,6 +216,16 @@ export default {
 	padding-left: 18em;
 	padding-right: 18em;
 }
+
+@media (max-width: 960px) {
+	.top-container {
+		padding-top: 1.5em;
+		padding-left: 1.5em;
+		padding-right: 1.5em;
+		padding-bottom: 1.5em;
+	}
+}
+
 .divider {
 	background-color: white;
 	margin-left: 30em;
@@ -233,5 +235,13 @@ export default {
 }
 .card-img:hover {
 	opacity: 0.8;
+}
+br.responsive {
+	display: none;
+}
+@media (max-width: 600px) {
+	br.responsive {
+		display: inline;
+	}
 }
 </style>

@@ -2,7 +2,8 @@
 	<v-container fluid class="pa-0">
 		<div class="top-container">
 			<div class="text-h5 text-center font-weight-bold white--text">ABOUT US</div>
-			<v-divider class="divider"></v-divider>
+			<v-divider class="hidden-sm-and-down divider"></v-divider>
+			<v-divider dark class="my-4 hidden-md-and-up"></v-divider>
 			<div class="text-h6 font-weight-regular white--text">
 				<span class="font-italic font-weight-medium">
 					FINBRID is a partnership of visionary consultants with an impeccable reputation in the global marine
@@ -44,6 +45,16 @@
 	padding-left: 18em;
 	padding-right: 18em;
 }
+
+@media (max-width: 960px) {
+	.top-container {
+		padding-top: 1.5em;
+		padding-left: 1.5em;
+		padding-right: 1.5em;
+		padding-bottom: 1.5em;
+	}
+}
+
 .divider {
 	background-color: white;
 	margin-left: 30em;
