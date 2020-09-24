@@ -68,7 +68,7 @@
 		<v-app-bar
 			app
 			extended
-			min-height="4.2em"
+			min-height="3.9em"
 			color="#1D2951"
 			class="rounded-b-lg hidden-md-and-up"
 			:collapse-on-scroll="collapseOnScroll"
@@ -79,7 +79,7 @@
 					:src="this.headerLogo"
 					class="mobile-finbrid-logo"
 					max-width="8em"
-					max-height="5em"
+					max-height="6em"
 					contain
 				></v-img>
 			</v-app-bar-nav-icon>
@@ -91,7 +91,7 @@
 					text
 					rounded
 					color="white"
-					class="pa-4 font-weight-bold white--text mt-14"
+					class="pa-4 font-weight-bold white--text"
 					@click.stop="dialog = true"
 					v-if="collapseOnScroll"
 					large
@@ -346,6 +346,7 @@ html {
 }
 .mobile-finbrid-logo {
 	margin-left: 8em;
+	margin-top: 1em;
 }
 .expanded-mobile-logo {
 	margin-top: 3em;

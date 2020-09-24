@@ -6,7 +6,8 @@
 			>
 				WHAT WE DO
 			</div>
-			<v-divider class="divider"></v-divider>
+			<v-divider class="hidden-sm-and-down divider"></v-divider>
+			<v-divider dark class="my-4 hidden-md-and-up"></v-divider>
 			<div class="text-h6 font-weight-normal white--text">
 				<span class="font-italic">
 					Through our partnerships around the world, FINBRID
