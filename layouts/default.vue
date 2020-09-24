@@ -346,8 +346,6 @@ html {
 }
 .mobile-finbrid-logo {
 	margin-left: 8em;
-	margin-top: 3.5em;
-	margin-bottom: 2em;
 }
 .expanded-mobile-logo {
 	margin-top: 3em;
