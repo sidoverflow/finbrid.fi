@@ -111,7 +111,7 @@ export default {
 			},
 			{
 				title:
-					'Project <br class="responsive" /> Financing <br /> & Investment',
+					'Project <br class="responsive" /> Financing & <br /> Investment',
 				src: require('@/components/investment.jpg'),
 				flex: 3,
 				dialog: 'financingModal',
@@ -135,6 +135,9 @@ export default {
 @media (max-width: 960px) {
 	.bottom-container {
 		padding-top: 1em;
+		padding-left: 1em;
+		padding-right: 1em;
+		padding-bottom: 0.1em;
 	}
 }
 .divider {
