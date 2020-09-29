@@ -46,7 +46,7 @@
 	padding-right: 18em;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1024px) {
 	.top-container {
 		padding-top: 1.5em;
 		padding-left: 1.5em;
