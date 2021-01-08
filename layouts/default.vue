@@ -1,6 +1,6 @@
 <template>
 	<v-app>
-		<v-navigation-drawer min-width="1300px" class="rounded-b-xl hidden-sm-and-down" color="#1D2951" prominent app>
+		<v-app-bar min-width="1300px" class="rounded-b-xl hidden-sm-and-down" color="#1D2951" prominent app>
 			<v-img
 				:src="this.headerLogo"
 				max-height="5em"
@@ -50,7 +50,7 @@
 					<v-icon x-small class="mr-2">fa fa-envelope</v-icon>Contact Us
 				</v-btn>
 			</div>
-		</v-navigation-drawer>
+		</v-app-bar>
 		<v-app-bar
 			app
 			extended
