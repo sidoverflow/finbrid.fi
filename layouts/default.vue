@@ -1,6 +1,6 @@
 <template>
 	<v-app>
-		<v-app-bar min-width="1300px" class="rounded-b-xl hidden-sm-and-down" color="#1D2951" prominent app>
+		<v-navigation-drawer min-width="1300px" class="rounded-b-xl hidden-sm-and-down" color="#1D2951" prominent app>
 			<v-img
 				:src="this.headerLogo"
 				max-height="5em"
@@ -50,7 +50,7 @@
 					<v-icon x-small class="mr-2">fa fa-envelope</v-icon>Contact Us
 				</v-btn>
 			</div>
-		</v-app-bar>
+		</v-navigation-drawer>
 		<v-app-bar
 			app
 			extended
@@ -125,7 +125,9 @@
 			</v-dialog>
 		</v-app-bar>
 		<v-main>
-			<nuxt />
+			<v-container>
+				<nuxt />
+			</v-container>
 		</v-main>
 
 		<v-footer min-width="600px" color="#333c5a" padless height="40em" app class="hidden-sm-and-down">

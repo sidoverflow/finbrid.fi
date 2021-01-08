@@ -43,12 +43,7 @@ export default {
 	/*
 	 ** Global CSS
 	 */
-	css: ['~/assets/css/global.css'],
-	/*
-	 ** Plugins to load before mounting the App
-	 ** https://nuxtjs.org/guide/plugins
-	 */
-	plugins: [],
+	css: ['~/assets/global.css'],
 	/*
 	 ** Auto import components
 	 ** See https://nuxtjs.org/api/configuration-components
@@ -67,7 +62,7 @@ export default {
 	 ** https://github.com/nuxt-community/vuetify-module
 	 */
 	vuetify: {
-		customVariables: ['~/assets/css/variables.scss'],
+		customVariables: ['~/assets/variables.scss'],
 		theme: {
 			themes: {
 				light: {
@@ -89,9 +84,16 @@ export default {
 			icons: 'fa',
 		},
 	},
-	/*
-	 ** Build configuration
-	 ** See https://nuxtjs.org/api/configuration-build/
-	 */
-	build: {},
+	// Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
+	plugins: [],
+
+	// Build Configuration (https://go.nuxtjs.dev/config-build)
+	build: {
+		extend(config, { isDev, isClient, loaders: { vue } }) {
+			if (isClient) {
+				vue.transformAssetUrls.img = ['data-src', 'src'];
+				vue.transformAssetUrls.source = ['data-srcset', 'srcset'];
+			}
+		},
+	},
 };

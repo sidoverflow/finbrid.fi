@@ -35,7 +35,7 @@
 							:src="card.src"
 							class="white--text align-end"
 							gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-							height="26em"
+							height="16em"
 						>
 							<v-card-title class="font-weight-bold" v-html="card.title"></v-card-title>
 						</v-img>
