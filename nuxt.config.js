@@ -2,11 +2,6 @@ import colors from 'vuetify/es5/util/colors';
 
 export default {
 	/*
-	 ** Nuxt rendering mode
-	 ** See https://nuxtjs.org/api/configuration-mode
-	 */
-	mode: 'universal',
-	/*
 	 ** Nuxt target
 	 ** See https://nuxtjs.org/api/configuration-target
 	 */
@@ -35,8 +30,8 @@ export default {
 		link: [
 			{
 				rel: 'icon',
-				type: 'image/png',
-				href: '/finbrid_graphic.png',
+				type: 'image/x-icon',
+				href: '/finbrid-website/favicon.ico',
 			},
 			{
 				rel: 'stylesheet',
@@ -63,9 +58,6 @@ export default {
 	 ** Nuxt.js dev-modules
 	 */
 	buildModules: ['@nuxtjs/vuetify', '@aceforth/nuxt-optimized-images'],
-	optimizedImages: {
-		optimizeImages: true,
-	},
 	/*
 	 ** Nuxt.js modules
 	 */

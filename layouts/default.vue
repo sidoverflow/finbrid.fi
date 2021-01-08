@@ -87,7 +87,6 @@
 			</v-toolbar-title>
 
 			<v-dialog v-model="dialog" fullscreen hide-overlay transition="dialog-bottom-transition">
-				<v-toolbar-side-icon dark slot="activator"></v-toolbar-side-icon>
 				<v-card color="accent">
 					<v-toolbar extended color="#141d36">
 						<v-img
