@@ -26,6 +26,7 @@
 							outlined
 							rounded
 							required
+							name="name"
 						></v-text-field>
 
 						<v-text-field
@@ -36,6 +37,16 @@
 							rounded
 							required
 							name="_replyto"
+						></v-text-field>
+
+						<v-text-field
+							dark
+							color="white"
+							label="Subject"
+							outlined
+							rounded
+							required
+							name="_subject"
 						></v-text-field>
 
 						<v-textarea
@@ -82,6 +93,7 @@
 							outlined
 							rounded
 							required
+							name="name"
 						></v-text-field>
 
 						<v-text-field
@@ -92,6 +104,16 @@
 							rounded
 							required
 							name="_replyto"
+						></v-text-field>
+
+						<v-text-field
+							dark
+							color="white"
+							label="Subject"
+							outlined
+							rounded
+							required
+							name="_subject"
 						></v-text-field>
 
 						<v-textarea
