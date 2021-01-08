@@ -209,7 +209,8 @@ export default {
 	}),
 	head: () => {
 		return {
-			titleTemplate: '%s - What We Do',
+			title: 'What We Do',
+			meta: [{ hid: 'description', name: 'description', content: 'What we do at Finbrid' }],
 		};
 	},
 };

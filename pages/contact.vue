@@ -126,7 +126,8 @@
 export default {
 	head: () => {
 		return {
-			titleTemplate: '%s - Contact',
+			title: 'Contact',
+			meta: [{ hid: 'description', name: 'description', content: 'Contact us' }],
 		};
 	},
 };

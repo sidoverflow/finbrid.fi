@@ -19,7 +19,7 @@ export default {
 	 ** See https://nuxtjs.org/api/configuration-head
 	 */
 	head: {
-		title: 'Finbrid',
+		titleTemplate: '%s | Finbrid',
 		meta: [
 			{ charset: 'utf-8' },
 			{
@@ -62,10 +62,7 @@ export default {
 	/*
 	 ** Nuxt.js dev-modules
 	 */
-	buildModules: [
-		'@nuxtjs/vuetify',
-		'@aceforth/nuxt-optimized-images',
-	],
+	buildModules: ['@nuxtjs/vuetify', '@aceforth/nuxt-optimized-images'],
 	optimizedImages: {
 		optimizeImages: true,
 	},

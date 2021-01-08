@@ -97,7 +97,15 @@ export default {
 	},
 	head: () => {
 		return {
-			titleTemplate: '%s - Home',
+			title: 'Home',
+			meta: [
+				{
+					hid: 'description',
+					name: 'description',
+					content:
+						'Utilizing industry and technological knowhow. Finbrid brings together power with propulsion for operational success. ',
+				},
+			],
 		};
 	},
 };
