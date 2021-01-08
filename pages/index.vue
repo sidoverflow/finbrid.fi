@@ -1,9 +1,7 @@
 <template>
 	<v-container fluid class="pa-0">
 		<div class="top-container">
-			<v-card-text
-				class="text-h4 font-weight-bold white--text mb-4 text-center"
-			>
+			<v-card-text class="text-h4 font-weight-bold white--text mb-4 text-center">
 				Utilizing industry and technological knowhow.
 			</v-card-text>
 			<v-divider class="hidden-sm-and-down divider"></v-divider>
@@ -25,58 +23,35 @@
 				></v-img>
 			</div>
 
-			<v-card-text
-				class="text-h5 font-weight-medium white--text font-italic text-center"
-			>
-				brings together power with propulsion for operational
-				success
+			<v-card-text class="text-h5 font-weight-medium white--text font-italic text-center">
+				brings together power with propulsion for operational success
 			</v-card-text>
 		</div>
 		<div class="bottom-container">
 			<v-row class="px-12 mt-4 hidden-sm-and-down">
-				<v-col
-					v-for="card in cards"
-					:key="card.title"
-					:cols="card.flex"
-				>
-					<v-card
-						class="rounded-lg"
-						href="/finbrid-website/what_we_do"
-					>
+				<v-col v-for="card in cards" :key="card.title" :cols="card.flex">
+					<v-card class="rounded-lg" href="/finbrid-website/what_we_do">
 						<v-img
 							:src="card.src"
 							class="white--text align-end"
 							gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
 							height="26em"
 						>
-							<v-card-title
-								class="font-weight-bold"
-								v-html="card.title"
-							></v-card-title>
+							<v-card-title class="font-weight-bold" v-html="card.title"></v-card-title>
 						</v-img>
 					</v-card>
 				</v-col>
 			</v-row>
 			<v-row class="px-4 mt-2 hidden-md-and-up">
-				<v-col
-					v-for="card in cards"
-					:key="card.title"
-					:cols="6"
-				>
-					<v-card
-						class="rounded-lg"
-						href="/finbrid-website/what_we_do"
-					>
+				<v-col v-for="card in cards" :key="card.title" :cols="6">
+					<v-card class="rounded-lg" href="/finbrid-website/what_we_do">
 						<v-img
 							:src="card.src"
 							class="white--text align-end"
 							gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
 							height="13em"
 						>
-							<v-card-title
-								class="font-weight-bold"
-								v-html="card.title"
-							></v-card-title>
+							<v-card-title class="font-weight-bold" v-html="card.title"></v-card-title>
 						</v-img>
 					</v-card>
 				</v-col>
@@ -108,8 +83,7 @@ export default {
 				dialog: 'solutionsModal',
 			},
 			{
-				title:
-					'Project <br class="responsive" /> Financing & <br /> Investment',
+				title: 'Project <br class="responsive" /> Financing & <br /> Investment',
 				src: require('@/assets/investment.jpg'),
 				flex: 3,
 				dialog: 'financingModal',

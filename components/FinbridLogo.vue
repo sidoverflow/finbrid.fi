@@ -1,10 +1,6 @@
 <template>
 	<a href="/">
-		<img
-			class="FinbridLogo"
-			alt="Finbrid Logo"
-			src="~/asssets/finbrid_logo.png"
-		/>
+		<img class="FinbridLogo" alt="Finbrid Logo" src="~/asssets/finbrid_logo.png" />
 	</a>
 </template>
 
