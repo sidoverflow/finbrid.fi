@@ -323,7 +323,7 @@ html {
 }
 .mobile-finbrid-logo {
 	margin-left: 8em;
-	margin-top: 0.5em;
+	margin-top: 3em;
 }
 .expanded-mobile-logo {
 	margin-top: 3em;
