@@ -19,8 +19,7 @@ export default {
 	 ** See https://nuxtjs.org/api/configuration-head
 	 */
 	head: {
-		titleTemplate: '%s - ' + process.env.npm_package_name,
-		title: process.env.npm_package_name || '',
+		title: 'Finbrid',
 		meta: [
 			{ charset: 'utf-8' },
 			{
@@ -36,8 +35,8 @@ export default {
 		link: [
 			{
 				rel: 'icon',
-				type: 'image/x-icon',
-				href: '/favicon.ico',
+				type: 'image/png',
+				href: '/finbrid_graphic.png',
 			},
 			{
 				rel: 'stylesheet',
@@ -49,7 +48,7 @@ export default {
 	/*
 	 ** Global CSS
 	 */
-	css: [],
+	css: ['~/assets/css/global.css'],
 	/*
 	 ** Plugins to load before mounting the App
 	 ** https://nuxtjs.org/guide/plugins
@@ -67,20 +66,13 @@ export default {
 	/*
 	 ** Nuxt.js modules
 	 */
-	modules: [
-		[
-			'nuxt-gmaps',
-			{
-				key: 'AIzaSyB-Qh66cVcsfDGcTFUcRPkvX-PCVTtAY9E',
-			},
-		],
-	],
+	modules: [],
 	/*
 	 ** vuetify module configuration
 	 ** https://github.com/nuxt-community/vuetify-module
 	 */
 	vuetify: {
-		customVariables: ['~/assets/variables.scss'],
+		customVariables: ['~/assets/css/variables.scss'],
 		theme: {
 			themes: {
 				light: {

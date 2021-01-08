@@ -1,6 +1,5 @@
 <template>
 	<v-container fluid class="pa-0">
-		<!-- <v-card class="rounded-t-xl mb-4" color="tran" width="auto" height="300px" elevation="0"> -->
 		<div class="top-container">
 			<v-card-text
 				class="text-h4 font-weight-bold white--text mb-4 text-center"
@@ -33,7 +32,6 @@
 				success
 			</v-card-text>
 		</div>
-		<!-- </v-card> -->
 		<div class="bottom-container">
 			<v-row class="px-12 mt-4 hidden-sm-and-down">
 				<v-col
@@ -93,26 +91,26 @@ export default {
 		cards: [
 			{
 				title: 'Technology',
-				src: require('@/components/yacht.jpg'),
+				src: require('@/assets/yacht.jpg'),
 				flex: 3,
 				dialog: 'techModal',
 			},
 			{
 				title: 'Business',
-				src: require('@/components/business.jpg'),
+				src: require('@/assets/business.jpg'),
 				flex: 3,
 				dialog: 'businessModal',
 			},
 			{
 				title: 'Solutions',
-				src: require('@/components/solutions.jpg'),
+				src: require('@/assets/solutions.jpg'),
 				flex: 3,
 				dialog: 'solutionsModal',
 			},
 			{
 				title:
 					'Project <br class="responsive" /> Financing & <br /> Investment',
-				src: require('@/components/investment.jpg'),
+				src: require('@/assets/investment.jpg'),
 				flex: 3,
 				dialog: 'financingModal',
 			},
@@ -120,8 +118,13 @@ export default {
 	}),
 	computed: {
 		finbridLogo() {
-			return require('@/components/fintext_ps.png');
+			return require('@/assets/finbrid_text.png');
 		},
+	},
+	head: () => {
+		return {
+			titleTemplate: '%s - Home',
+		};
 	},
 };
 </script>
