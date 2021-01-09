@@ -97,4 +97,12 @@ export default {
 			}
 		},
 	},
+	pageTransition: {
+		appear: true,
+	},
+	loadingIndicator: {
+		name: 'chasing-dots',
+		color: 'white',
+		background: '#141d36',
+	},
 };
