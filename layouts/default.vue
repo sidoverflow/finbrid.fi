@@ -1,6 +1,6 @@
 <template>
 	<v-app>
-		<v-app-bar min-width="1300px" class="rounded-b-xl hidden-sm-and-down" color="#1D2951" prominent app>
+		<v-app-bar min-width="1300px" class="rounded-b-xl hidden-sm-and-down" color="accent" prominent app>
 			<v-img
 				:src="this.headerLogo"
 				max-height="5em"
@@ -16,7 +16,7 @@
 					rounded
 					color="white"
 					class="mr-6 pa-4 font-weight-bold white--text"
-					href="/finbrid-website"
+					to="/"
 				>
 					<v-icon x-small class="mr-2">fa fa-home</v-icon>Home
 				</v-btn>
@@ -25,7 +25,7 @@
 					rounded
 					color="white"
 					class="mx-6 pa-4 font-weight-bold white--text"
-					href="/finbrid-website/about"
+					to="/about"
 				>
 					<v-icon x-small class="mr-2">fa fa-users</v-icon>About Us
 				</v-btn>
@@ -35,7 +35,7 @@
 					color="white"
 					dark
 					class="mx-6 pa-4 font-weight-bold white--text"
-					href="/finbrid-website/what_we_do"
+					to="/what_we_do"
 				>
 					<v-icon x-small class="mr-2">fa fa-globe-europe</v-icon>What We Do
 				</v-btn>
@@ -45,7 +45,7 @@
 					color="white"
 					dark
 					class="ml-6 pa-4 font-weight-bold white--text"
-					href="/finbrid-website/contact"
+					to="/contact"
 				>
 					<v-icon x-small class="mr-2">fa fa-envelope</v-icon>Contact Us
 				</v-btn>
@@ -55,7 +55,7 @@
 			app
 			extended
 			min-height="3.9em"
-			color="#1D2951"
+			color="accent"
 			class="rounded-b-lg hidden-md-and-up"
 			:collapse-on-scroll="collapseOnScroll"
 			:collapse="!collapseOnScroll"

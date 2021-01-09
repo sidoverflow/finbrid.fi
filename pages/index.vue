@@ -30,7 +30,7 @@
 		<div class="bottom-container">
 			<v-row class="px-12 mt-4 hidden-sm-and-down">
 				<v-col v-for="card in cards" :key="card.title" :cols="card.flex">
-					<v-card class="rounded-lg" href="/finbrid-website/what_we_do">
+					<v-card class="rounded-lg" to="/what_we_do">
 						<v-img
 							:src="card.src"
 							class="white--text align-end"
@@ -44,7 +44,7 @@
 			</v-row>
 			<v-row class="px-4 mt-2 hidden-md-and-up">
 				<v-col v-for="card in cards" :key="card.title" :cols="6">
-					<v-card class="rounded-lg" href="/finbrid-website/what_we_do">
+					<v-card class="rounded-lg" to="/what_we_do">
 						<v-img
 							:src="card.src"
 							class="white--text align-end"

@@ -88,6 +88,7 @@ export default {
 	plugins: [],
 
 	// Build Configuration (https://go.nuxtjs.dev/config-build)
+	// for lazyload (not setup)
 	build: {
 		extend(config, { isDev, isClient, loaders: { vue } }) {
 			if (isClient) {
