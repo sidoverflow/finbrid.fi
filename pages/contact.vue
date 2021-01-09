@@ -18,7 +18,7 @@
 					></iframe>
 				</v-col>
 				<v-col cols="4" class="hidden-sm-and-down">
-					<form action="https://formspree.io/f/xeqpvggk" method="POST">
+					<form action="https://formspree.io/f/myyblppn" method="POST">
 						<v-text-field
 							dark
 							color="white"
