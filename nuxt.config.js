@@ -28,7 +28,7 @@ export default {
 			{
 				rel: 'icon',
 				type: 'image/x-icon',
-				href: '/finbrid-website/favicon.ico',
+				href: '/favicon.ico',
 			},
 			{
 				rel: 'stylesheet',
