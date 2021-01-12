@@ -4,7 +4,7 @@
 			<div class="text-h5 text-center font-weight-bold white--text">ABOUT US</div>
 			<v-divider class="hidden-sm-and-down divider"></v-divider>
 			<v-divider dark class="my-4 hidden-md-and-up"></v-divider>
-			<div class="text-h6 font-weight-regular white--text">
+			<div class="text-h6 font-weight-regular white--text text-justify">
 				<span class="font-italic font-weight-medium">
 					FINBRID is a partnership of visionary consultants with an impeccable reputation in the
 					global marine and electrification sector.
@@ -50,12 +50,6 @@ export default {
 </script>
 
 <style>
-.top-container {
-	padding-top: 2.5em;
-	padding-left: 18em;
-	padding-right: 18em;
-}
-
 @media (max-width: 1024px) {
 	.top-container {
 		padding-top: 1.5em;

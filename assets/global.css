@@ -15,3 +15,9 @@
 .page-leave-to {
   opacity: 0;
 }
+.v-card__text, .v-card__title {
+  word-break: normal !important
+}
+.top-container {
+  margin-top: 2em;
+}

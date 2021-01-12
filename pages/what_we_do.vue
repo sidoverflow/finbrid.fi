@@ -4,7 +4,7 @@
 			<div class="text-h5 text-center font-weight-bold white--text">WHAT WE DO</div>
 			<v-divider class="hidden-sm-and-down divider"></v-divider>
 			<v-divider dark class="my-4 hidden-md-and-up"></v-divider>
-			<div class="text-h6 font-weight-normal white--text">
+			<div class="text-h6 font-weight-normal white--text text-justify">
 				<span class="font-italic">
 					Through our partnerships around the world, FINBRID is able to harness greater project
 					value than its competitors.
@@ -37,8 +37,8 @@
 				</v-col>
 			</v-row>
 
-			<v-row class="px-4 mt-4 hidden-md-and-up">
-				<v-col v-for="card in cards" :key="card.title" :cols="6">
+			<v-row class="px-2 mt-2 hidden-md-and-up">
+				<v-col v-for="card in cards" :key="card.title" :cols="12">
 					<v-card class="rounded-lg" @click.stop="card.dialog = true">
 						<v-img
 							:src="card.src"
@@ -137,7 +137,7 @@ export default {
 	data: () => ({
 		cards: [
 			{
-				title: 'Technology <br class="responsive" /> Evaluation',
+				title: 'Technology Evaluation',
 				src: require('@/assets/wwd_technology.jpg'),
 				flex: 3,
 				tags: [
@@ -161,7 +161,7 @@ export default {
 				dialog: false,
 			},
 			{
-				title: 'Business <br class="responsive" /> Evaluation',
+				title: 'Business Evaluation',
 				src: require('@/assets/wwd_business.jpg'),
 				flex: 3,
 				tags: [
@@ -194,7 +194,7 @@ export default {
 				dialog: false,
 			},
 			{
-				title: 'Project <br class="responsive" /> Financing & <br /> Investment',
+				title: 'Project Financing & Investment',
 				src: require('@/assets/wwd_finance.jpg'),
 				flex: 3,
 				descriptions: [
@@ -217,12 +217,6 @@ export default {
 </script>
 
 <style>
-.top-container {
-	padding-top: 2.5em;
-	padding-left: 18em;
-	padding-right: 18em;
-}
-
 @media (max-width: 1024px) {
 	.top-container {
 		padding-top: 1.5em;
@@ -235,8 +229,8 @@ export default {
 @media (max-width: 960px) {
 	.bottom-container {
 		padding-top: 1em;
-		padding-left: 1em;
-		padding-right: 1em;
+		padding-left: 0.5em;
+		padding-right: 0.5em;
 	}
 }
 
@@ -249,13 +243,6 @@ export default {
 }
 .card-img:hover {
 	opacity: 0.8;
-}
-br.responsive {
-	display: none;
-}
-@media (max-width: 600px) {
-	br.responsive {
-		display: inline;
-	}
+	transition: 0.5s;
 }
 </style>

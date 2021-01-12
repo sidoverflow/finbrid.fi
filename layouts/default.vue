@@ -244,6 +244,6 @@ html {
 }
 .expanded-mobile-logo {
 	margin-top: 3em;
-	margin-left: 7em;
+	margin-left: 1em;
 }
 </style>
